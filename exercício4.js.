@@ -1,1 +1,32 @@
+let usuarios = [
+  { nome: "Ana", ativo: true },
+  { nome: "Bruno", ativo: false },
+  { nome: "Carla", ativo: true },
+  { nome: "Daniel", ativo: false }
+];
+
+// 4.1 - Mostrar todos os nomes
+console.log("Todos os usuários:");
+for (let usuario of usuarios) {
+  console.log(usuario.nome);
+}
+
+// 4.2 - Mostrar apenas usuários ativos
+console.log("Usuários ativos:");
+for (let usuario of usuarios) {
+  if (usuario.ativo === true) {
+    console.log(usuario.nome);
+  }
+}
+
+// 4.3 - Contar usuários ativos
+let contador = 0;
+
+for (let usuario of usuarios) {
+  if (usuario.ativo === true) {
+    contador++;
+  }
+}
+
+console.log("Quantidade de usuários ativos:", contador);
 
